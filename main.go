@@ -4,10 +4,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"math/rand"
 	"os"
 	"strconv"
-	"time"
 
 	_ "github.com/FloatTech/ReiBot-Plugin/plugin/b14"
 	_ "github.com/FloatTech/ReiBot-Plugin/plugin/base64gua"
@@ -36,8 +34,6 @@ import (
 )
 
 func main() {
-	rand.Seed(time.Now().UnixNano()) // 全局 seed，其他插件无需再 seed
-
 	token := flag.String("t", "", "telegram api token")
 	buffer := flag.Int("b", 256, "message sequence length")
 	debug := flag.Bool("d", false, "enable debug-level log output")
