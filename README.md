@@ -6,7 +6,7 @@
   <h1>ReiBot-Plugin</h1>
   基于 ReiBot 的 Telegram 插件<br><br>
 
-  <img src="http://cmoe.azurewebsites.net/cmoe?name=ReiBot&theme=r34" /><br>
+  <img src="https://counter.seku.su/cmoe?name=ReiBot&theme=r34" /><br>
 
 </div>
 
