@@ -1,6 +1,5 @@
 linters-settings:
   errcheck:
-    ignore: fmt:.*
     ignoretests: true
 
   goimports:
@@ -18,11 +17,10 @@ linters:
   fast: false
   enable:
     - bodyclose
-    - deadcode
-    - depguard
+    #- depguard
     - dogsled
     - errcheck
-    - exportloopref
+    #- exportloopref
     - exhaustive
     #- funlen
     #- goconst
@@ -39,13 +37,11 @@ linters:
     - nolintlint
     - rowserrcheck
     - staticcheck
-    - structcheck
     - stylecheck
     - typecheck
     - unconvert
     - unparam
     - unused
-    - varcheck
     - whitespace
     - prealloc
     - predeclared
@@ -60,13 +56,12 @@ run:
   deadline: 5m
   issues-exit-code: 1
   tests: false
-  skip-dirs:
-    - order
-  go: '1.19'
+  go: '1.20'
 
 # output configuration options
 output:
-  format: "colored-line-number"
+  formats:
+   - format: "colored-line-number"
   print-issued-lines: true
   print-linter-name: true
   uniq-by-line: true
@@ -77,3 +72,4 @@ issues:
   exclude-use-default: false
   exclude:
     - "Error return value of .((os.)?std(out|err)..*|.*Close|.*Seek|.*Flush|os.Remove(All)?|.*print(f|ln)?|os.(Un)?Setenv). is not check"
+    - 'identifier ".*" contain non-ASCII character: U\+.*'
