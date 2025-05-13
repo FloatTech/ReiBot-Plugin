@@ -1,3 +1,4 @@
+// Package main ReiBot-Plugin
 package main
 
 import (

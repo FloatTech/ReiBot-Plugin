@@ -9,6 +9,7 @@ func init() {
 	PrintBanner()
 }
 
+// PrintBanner ...
 func PrintBanner() {
 	fmt.Print(
 		"\n======================[ReiBot-Plugin]======================",

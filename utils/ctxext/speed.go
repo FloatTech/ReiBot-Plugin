@@ -118,6 +118,7 @@ func (m LimiterManager) LimitByGroup(ctx *rei.Ctx) *rate.Limiter {
 	return defaultLimiterManager.Load(0)
 }
 
+// MustMessageNotNil ...
 func MustMessageNotNil(ctx *rei.Ctx) bool {
 	return ctx.Message != nil
 }
