@@ -1,6 +1,6 @@
 module github.com/FloatTech/ReiBot-Plugin
 
-go 1.19
+go 1.20
 
 require (
 	github.com/FloatTech/AnimeAPI v1.7.1-0.20250423082452-e16339a3962c
